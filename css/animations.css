@@ -1,0 +1,145 @@
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Fade In Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  /* Slide In from Left */
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .slide-in-left {
+    animation: slideInLeft 1s ease-out forwards;
+  }
+  
+  /* Slide In from Right */
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .slide-in-right {
+    animation: slideInRight 1s ease-out forwards;
+  }
+  
+  /* Bounce In */
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    70% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .bounce-in {
+    animation: bounceIn 1s ease-in-out forwards;
+  }
+  
+  /* Zoom In */
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  .zoom-in {
+    animation: zoomIn 0.8s ease-out forwards;
+  }
+  
+  /* Button Pulse on Hover */
+  .btn:hover {
+    animation: pulse 0.6s ease-in-out;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Card Hover Animation */
+  .project-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  .project-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Delay Utilities */
+  .delay-1 {
+    animation-delay: 0.3s;
+  }
+  .delay-2 {
+    animation-delay: 0.6s;
+  }
+  .delay-3 {
+    animation-delay: 0.9s;
+  }
+  .delay-1 { animation-delay: 0.3s; }
+  .delay-2 { animation-delay: 0.6s; }
+  .delay-3 { animation-delay: 0.9s; }
+  .delay-4 { animation-delay: 1.2s; }
+  
+  .animate {
+    opacity: 1;
+    transform: translateY(0);
+    animation-play-state: running;
+  }
+  .skill-bar {
+    background-color: #ddd;
+    height: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    width: 0;
+    background-color: #3498db;
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+}
