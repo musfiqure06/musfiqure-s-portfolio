@@ -685,7 +685,7 @@ img {
 
 @media (max-width: 768px) {
     .hero{
-        background-image: url(/assets/mobail.jpg);
+        background-image: url('../assets/mobail.jpg');
       
         min-height: 100vh;
         display: flex;
